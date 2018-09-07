@@ -11,7 +11,7 @@
     <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
     <!-- 引入bootstrap.js -->
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-    <style type="text/css">
+   <!--  <style type="text/css">
         table.table-striped tr:nth-child(odd){
             background:blue;
         }
@@ -22,56 +22,10 @@
             background: skyblue;
         }
     </style>
- 
+  -->
 </head>
-<body>
-    <!-- div.container -->
-    <div class="container" style="border:1px solid blue" >
-        布局容器
-        <!-- 标题标记 h${标题标记}*6  -->
-        <h1>标题标记</h1>
-        <h2>标题标记</h2>
-        <h3>标题标记</h3>
-        <h4>标题标记</h4>
-        <h5>标题标记</h5>
-        <h6>标题标记</h6>
-        <span class="h1">
-            我是行内样式
-        </span>
-        <span class="h2">我是行内样式</span> 
-        <p><strong>全局</strong> css样式:<em>基本</em>
-        <ins>元素</ins><del>要删除的内容</del></p>
-        <p class="text-center">我爱北京天安门</p>
-        <p class="text-right">我爱你</p>
-        <div>
-            <h2>中国的四大名著</h2>
-            <ul>
-                <li>西游记</li>
-                <li>三国演义</li>
-                <li>水浒传</li>
-                <li>红楼梦</li>
-            </ul>
-            <ul class="list-inline"> <!-- 显示在同一行 -->
-                    <li>西游记</li>
-                    <li>三国演义</li>
-                    <li>水浒传</li>
-                    <li>红楼梦</li>
-                </ul>
-            <ul class="list-unstyled"><!-- 没有圆点,没有margin -->
-                    <li>西游记</li>
-                    <li>三国演义</li>
-                    <li>水浒传</li>
-                    <li>红楼梦</li>
-                </ul>   
-            <dl class="dl-horizontal"> <!-- 标题与列表同一行 -->
-                    <dt>中国的四大名著</dt>
-                    <dd>西游记|三国演义|水浒传|红楼梦</dd>
-                    
-             </dl>
-        </div>
-         
-    </div>
-    <div class="container">
+<body  
+     <div class="container">
         <!-- table>tr*5>td*4 表格设定 -->
         <table class="table table-bordered table-striped table-hover">
             <tr>
@@ -79,33 +33,54 @@
                 <td>商品名称</td>
                 <td>价格</td>
                 <td>状态</td>
+                <td>操作</td>
             </tr>
             <tr class="success">
                 <td>1001</td>
                 <td>小米手机</td>
                 <td>1999.00</td>
                 <td class="active">已发货</td>
+                <td><button type="button" class="btn btn-default">删除</button>
+                    <button type="button" class="btn btn-primary">删除</button>
+                </td>
             </tr>
             <tr class="info">
                 <td>1002</td>
                 <td>苹果手机</td>
                 <td>5800.00</td>
                 <td>已发货</td>
+                <td><button type="button" class="btn btn-warning">修改</button>
+                    <button type="button" class="btn btn-success">成功</button>
+                </td>
             </tr>
             <tr class="warning">
                 <td>1003</td>
                 <td>三星手机</td>
                 <td>3888.00</td>
                 <td>已退货</td>
+                <td><button type="button" class="btn btn-danger">操作</button>
+                    <button type="button" class="btn btn-info">信息</button>
+                </td>
             </tr>
             <tr class="danger">
                 <td>1004</td>
                 <td>华为手机</td>
                 <td>1999.00</td>
                 <td>待出库</td>
+                <td><button type="button" class="btn btn-warning">修改</button>
+                    <button type="button" class="btn btn-link">成功</button>
+                </td>
             </tr>
         </table>
-    </div>
+    <hr/>
+        <button class="btn btn-success">正常按钮</button>
+        <button class="btn btn-success btn-lg">超大按钮</button>
+        <button class="btn btn-success btn-bg">大按钮</button>
+        <button class="btn btn-success btn-sm">小按钮</button>
+        <button class="btn btn-success btn-xs" disabled="disabled">超小按钮</button>
+        <hr/>
+        <a href="http://www.baidu.com" class="btn btn-success btn-lg">百度</a>
+    </div> 
    
     
 </body>
