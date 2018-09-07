@@ -23,17 +23,40 @@
         }
     </style>
   -->
+  <style type="text/css">
+    div[class^="col-md"]{
+        border:1px solid blue;
+    }
+    .row{
+        margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <img src="./1-1.jpg" alt="" class="img-responsive"><!-- 响应式图片 -->
-        <hr/>
-        <img src="./1-1.jpg" alt="" class="img-responsive img-rounded"> <!-- 圆角 -->
-        <hr/>
-        <img src="./1-1.jpg" alt="" class="img-responsive img-circle"> <!-- 圆形 -->
-        <hr/>
-        <img src="./1-1.jpg" alt="" class="img-thumbnail"> <!-- 带边框响应式 -->
-        <hr/>
+    <div class="container">
+       <!-- 这里是由行与列来组成 -->
+       <div class="row">
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+           <div class="col-md-1">col-md-1</div>
+
+       </div>
+       <div class="row"> <!-- 合并单元格 -->
+           <div class="col-md-2">col-md-2</div>
+           <div class="col-md-3">col-md-3</div>
+           <div class="col-md-2">col-md-2</div>
+           <div class="col-md-2">col-md-2</div>
+           <div class="col-md-3">col-md-3</div>
+       </div>
     </div>
     
 </body>
