@@ -6,7 +6,7 @@
     <!-- 支持移动设备优先 -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- 引入CSS文件 -->
-    <link rec="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- 引入jquery.js -->
     <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
     <!-- 引入bootstrap.js -->
@@ -15,6 +15,53 @@
  
 </head>
 <body>
+    <!-- div.container -->
+    <div class="container" style="border:1px solid blue" >
+        布局容器
+        <!-- 标题标记 h${标题标记}*6  -->
+        <h1>标题标记</h1>
+        <h2>标题标记</h2>
+        <h3>标题标记</h3>
+        <h4>标题标记</h4>
+        <h5>标题标记</h5>
+        <h6>标题标记</h6>
+        <span class="h1">
+            我是行内样式
+        </span>
+        <span class="h2">我是行内样式</span> 
+        <p><strong>全局</strong> css样式:<em>基本</em>
+        <ins>元素</ins><del>要删除的内容</del></p>
+        <p class="text-center">我爱北京天安门</p>
+        <p class="text-right">我爱你</p>
+        <div>
+            <h2>中国的四大名著</h2>
+            <ul>
+                <li>西游记</li>
+                <li>三国演义</li>
+                <li>水浒传</li>
+                <li>红楼梦</li>
+            </ul>
+            <ul class="list-inline"> <!-- 显示在同一行 -->
+                    <li>西游记</li>
+                    <li>三国演义</li>
+                    <li>水浒传</li>
+                    <li>红楼梦</li>
+                </ul>
+            <ul class="list-unstyled"><!-- 没有圆点,没有margin -->
+                    <li>西游记</li>
+                    <li>三国演义</li>
+                    <li>水浒传</li>
+                    <li>红楼梦</li>
+                </ul>   
+            <dl class="dl-horizontal"> <!-- 标题与列表同一行 -->
+                    <dt>中国的四大名著</dt>
+                    <dd>西游记|三国演义|水浒传|红楼梦</dd>
+                    
+             </dl>
+        </div>
+         
+    </div>
+   
     
 </body>
 </html>
